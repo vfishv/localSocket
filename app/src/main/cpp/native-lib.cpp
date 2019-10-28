@@ -23,6 +23,7 @@ Java_etsoft_localsocket_MainActivity_stringFromJNI(
         jobject /* this */) {
     std::string hello = "Hello from C++";
     send_remote_request("hello from C++");
+    send_remote_request("hello from C++2");
     return env->NewStringUTF(hello.c_str());
 }
 
